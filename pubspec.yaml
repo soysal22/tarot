@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   flame_audio: ^2.0.2
+  get:
   flutter:
     sdk: flutter
 

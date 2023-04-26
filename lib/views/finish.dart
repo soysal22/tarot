@@ -4,11 +4,11 @@ import 'package:card_flick/models/card__model.dart';
 import 'package:flutter/material.dart';
 import 'package:flip_card/flip_card.dart';
 
-class Chat extends StatefulWidget {
-  const Chat({Key? key}) : super(key: key);
+class Finished extends StatefulWidget {
+  const Finished({Key? key}) : super(key: key);
 
   @override
-  _ChatState createState() => _ChatState();
+  _FinishedState createState() => _FinishedState();
 }
 
 List<CardModel> majorarcanaImagesList = [
@@ -124,7 +124,7 @@ List<CardModel> majorarcanaImagesList = [
   ),
 ];
 
-class _ChatState extends State<Chat> {
+class _FinishedState extends State<Finished> {
   @override
   void initState() {
     majorarcanaImagesList.shuffle();
@@ -227,7 +227,7 @@ class _ChatState extends State<Chat> {
         );
         Future.delayed(const Duration(seconds: 2)).then((value) =>
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const Chat())));
+                MaterialPageRoute(builder: (context) => const Finished())));
       },
       child: const Icon(Icons.refresh),
     );
