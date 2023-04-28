@@ -137,15 +137,12 @@ class _ThewandsState extends State<Thewands> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: CustomFloatActionButton(
-          routePage: () =>
-              Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (context) => const Thewands(),
-              ))),
+      floatingActionButton:
+          CustomFloatActionButton(routePage: () => Get.toNamed("/thewands")),
       backgroundColor: const Color.fromARGB(255, 159, 56, 1),
       body: CustomFlipCard(
         comeToList: thewandsImagesList,
-        nextPage: () => Get.to(() => const FinalPage()),
+        nextroute: "/finalPage",
       ),
     );
   }

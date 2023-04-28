@@ -1,23 +1,58 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, avoid_print, unused_element
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class CustomFloatActionButton extends StatelessWidget {
-  final Function() routePage;
+class CustomFloatActionButton extends StatefulWidget {
+  final void Function() routePage;
   const CustomFloatActionButton({super.key, required this.routePage});
 
   @override
+  State<CustomFloatActionButton> createState() =>
+      _CustomFloatActionButtonState();
+}
+
+bool _isLoading = false;
+
+class _CustomFloatActionButtonState extends State<CustomFloatActionButton> {
+  @override
   Widget build(BuildContext context) {
-    return FloatingActionButton(
-      onPressed: () {
-        showDialog(
-          context: context,
-          builder: (context) =>
-              const Center(child: CircularProgressIndicator()),
-        );
-        Future.delayed(const Duration(seconds: 2)).then((value) => routePage);
-      },
-      child: const Icon(Icons.refresh),
-    );
+    return _isLoading
+        ? const Center(
+            child: CircularProgressIndicator(),
+          )
+        : ElevatedButton(
+            onPressed: () {
+              setState(() {
+                _isLoading = true;
+              });
+
+              Future.delayed(const Duration(seconds: 2), () {
+                setState(() {
+                  _isLoading = false;
+                });
+                widget.routePage;
+              });
+            },
+            style: ElevatedButton.styleFrom(
+              padding: const EdgeInsets.all(15),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: const [
+                Text("Kartları Karıştır", style: TextStyle(fontSize: 18)),
+                SizedBox(width: 10),
+                Icon(Icons.swap_vert, size: 30),
+              ],
+            ),
+          );
+  }
+
+  _dialog(BuildContext context) {
+    return Get.dialog(const Center(
+      child: CircularProgressIndicator(),
+    ));
   }
 }

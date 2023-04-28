@@ -138,14 +138,12 @@ class _ThepentaclesState extends State<Thepentacles> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: CustomFloatActionButton(
-          routePage: () =>
-              Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (context) => const Thepentacles(),
-              ))),
+        routePage: () => Get.toNamed("/thepentacles"),
+      ),
       backgroundColor: const Color.fromARGB(255, 159, 56, 1),
       body: CustomFlipCard(
         comeToList: thepentaclesImagesList,
-        nextPage: () => Get.to(() => const Theswords()),
+        nextroute: "/theswords",
       ),
     );
   }

@@ -17,113 +17,73 @@ class Thecups extends StatefulWidget {
 List<CardModel> thecupsImagesList = [
   CardModel(
     id: 0,
-    imageUrl: 'assets/images/majorarcana/death.jpg',
-    title: "death",
+    imageUrl: 'assets/images/majorarcana/aceofcups.jpg',
+    title: "aceofcups",
   ),
   CardModel(
     id: 1,
-    imageUrl: 'assets/images/majorarcana/hangedman.jpg',
-    title: "hangedman",
+    imageUrl: 'assets/images/majorarcana/eightofcups.jpg',
+    title: "eightofcups",
   ),
   CardModel(
     id: 2,
-    imageUrl: 'assets/images/majorarcana/judgement.jpg',
-    title: "judgement",
+    imageUrl: 'assets/images/majorarcana/fiveofcups.jpg',
+    title: "fiveofcups",
   ),
   CardModel(
     id: 3,
-    imageUrl: 'assets/images/majorarcana/justice.jpg',
-    title: "justice",
+    imageUrl: 'assets/images/majorarcana/fourofcups.jpg',
+    title: "fourofcups",
   ),
   CardModel(
     id: 4,
-    imageUrl: 'assets/images/majorarcana/strength.jpg',
-    title: "strength",
+    imageUrl: 'assets/images/majorarcana/kingofcups.jpg',
+    title: "kingofcups",
   ),
   CardModel(
     id: 5,
-    imageUrl: 'assets/images/majorarcana/temperance.jpg',
-    title: "temperance",
+    imageUrl: 'assets/images/majorarcana/knightofcups.jpg',
+    title: "knightofcups",
   ),
   CardModel(
     id: 6,
-    imageUrl: 'assets/images/majorarcana/thechariot.jpg',
-    title: "thechariot",
+    imageUrl: 'assets/images/majorarcana/nineofcups.jpg',
+    title: "nineofcups",
   ),
   CardModel(
     id: 7,
-    imageUrl: 'assets/images/majorarcana/thedevil.jpg',
-    title: "thedevil",
+    imageUrl: 'assets/images/majorarcana/pageofcups.jpg',
+    title: "pageofcups",
   ),
   CardModel(
     id: 8,
-    imageUrl: 'assets/images/majorarcana/theemperor.jpg',
-    title: "theemperor",
+    imageUrl: 'assets/images/majorarcana/queenofcups.jpg',
+    title: "queenofcups",
   ),
   CardModel(
     id: 9,
-    imageUrl: 'assets/images/majorarcana/theempress.jpg',
-    title: "theempress",
+    imageUrl: 'assets/images/majorarcana/sevenofcups.jpg',
+    title: "sevenofcups",
   ),
   CardModel(
     id: 10,
-    imageUrl: 'assets/images/majorarcana/thefool.jpg',
-    title: "thefool",
+    imageUrl: 'assets/images/majorarcana/sixofcups.jpg',
+    title: "sixofcups",
   ),
   CardModel(
     id: 11,
-    imageUrl: 'assets/images/majorarcana/thehermit.jpg',
-    title: "thehermit",
+    imageUrl: 'assets/images/majorarcana/tenofcups.jpg',
+    title: "tenofcups",
   ),
   CardModel(
     id: 12,
-    imageUrl: 'assets/images/majorarcana/thehierophant.jpg',
+    imageUrl: 'assets/images/majorarcana/threeofcups.jpg',
     title: "thehierophant",
   ),
   CardModel(
     id: 13,
-    imageUrl: 'assets/images/majorarcana/thehighpriest.jpg',
-    title: "thehighpriest",
-  ),
-  CardModel(
-    id: 14,
-    imageUrl: 'assets/images/majorarcana/thelovers.jpg',
-    title: "thelovers",
-  ),
-  CardModel(
-    id: 15,
-    imageUrl: 'assets/images/majorarcana/themagician.jpg',
-    title: "themagician",
-  ),
-  CardModel(
-    id: 16,
-    imageUrl: 'assets/images/majorarcana/themoon.jpg',
-    title: "themoon",
-  ),
-  CardModel(
-    id: 17,
-    imageUrl: 'assets/images/majorarcana/thestar.jpg',
-    title: "thestar",
-  ),
-  CardModel(
-    id: 18,
-    imageUrl: 'assets/images/majorarcana/thesun.jpg',
-    title: "thesun",
-  ),
-  CardModel(
-    id: 19,
-    imageUrl: 'assets/images/majorarcana/thetower.jpg',
-    title: "thetower",
-  ),
-  CardModel(
-    id: 20,
-    imageUrl: 'assets/images/majorarcana/theworld.jpg',
-    title: "theworld",
-  ),
-  CardModel(
-    id: 21,
-    imageUrl: 'assets/images/majorarcana/wheloffortune.jpg',
-    title: "wheloffortune",
+    imageUrl: 'assets/images/majorarcana/twoofcups.jpg',
+    title: "twoofcups",
   ),
 ];
 
@@ -138,14 +98,12 @@ class _ThecupsState extends State<Thecups> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: CustomFloatActionButton(
-          routePage: () =>
-              Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (context) => const Thecups(),
-              ))),
+        routePage: () => Get.toNamed("/thecups"),
+      ),
       backgroundColor: const Color.fromARGB(255, 159, 56, 1),
       body: CustomFlipCard(
         comeToList: thecupsImagesList,
-        nextPage: () => Get.to(() => const Thepentacles()),
+        nextroute: "/thepentacles",
       ),
     );
   }

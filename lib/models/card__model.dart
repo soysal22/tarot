@@ -2,10 +2,12 @@ class CardModel {
   int? id;
   String? imageUrl;
   String? title;
+  double? angle;
 
   CardModel({
-    required this.id,
-    required this.imageUrl,
-    required this.title,
+    this.id,
+    this.imageUrl,
+    this.title,
+    this.angle,
   });
 }
