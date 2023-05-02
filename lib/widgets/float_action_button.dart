@@ -1,7 +1,6 @@
 // ignore_for_file: file_names, avoid_print, unused_element
 
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class CustomFloatActionButton extends StatefulWidget {
   final void Function() routePage;
@@ -27,7 +26,7 @@ class _CustomFloatActionButtonState extends State<CustomFloatActionButton> {
                 _isLoading = true;
               });
 
-              Future.delayed(const Duration(seconds: 2), () {
+              Future.delayed(const Duration(seconds: 1), () {
                 setState(() {
                   _isLoading = false;
                 });
@@ -48,11 +47,5 @@ class _CustomFloatActionButtonState extends State<CustomFloatActionButton> {
               ],
             ),
           );
-  }
-
-  _dialog(BuildContext context) {
-    return Get.dialog(const Center(
-      child: CircularProgressIndicator(),
-    ));
   }
 }

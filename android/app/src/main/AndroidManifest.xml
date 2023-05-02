@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.card_flick">
    <application
-        android:label="card_flick"
+        android:label="Tarot"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

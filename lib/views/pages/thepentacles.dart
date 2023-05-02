@@ -1,7 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api, depend_on_referenced_packages, unrelated_type_equality_checks
 
 import 'package:card_flick/models/card__model.dart';
-import 'package:card_flick/views/pages/theswords.dart';
 import 'package:card_flick/widgets/customFlipCard.dart';
 import 'package:card_flick/widgets/float_Action_button.dart';
 import 'package:flutter/material.dart';
@@ -16,114 +15,60 @@ class Thepentacles extends StatefulWidget {
 
 List<CardModel> thepentaclesImagesList = [
   CardModel(
-    id: 0,
-    imageUrl: 'assets/images/majorarcana/death.jpg',
-    title: "death",
+    imageUrl: 'assets/images/thepentacles/aceofcoins.jpg',
+    title: "aceofcoins",
   ),
   CardModel(
-    id: 1,
-    imageUrl: 'assets/images/majorarcana/hangedman.jpg',
-    title: "hangedman",
+    imageUrl: 'assets/images/thepentacles/eightofcoins.jpg',
+    title: "eightofcoins",
   ),
   CardModel(
-    id: 2,
-    imageUrl: 'assets/images/majorarcana/judgement.jpg',
-    title: "judgement",
+    imageUrl: 'assets/images/thepentacles/fiveofcoins.jpg',
+    title: "fiveofcoins",
   ),
   CardModel(
-    id: 3,
-    imageUrl: 'assets/images/majorarcana/justice.jpg',
-    title: "justice",
+    imageUrl: 'assets/images/thepentacles/fourofcoins.jpg',
+    title: "fourofcoins",
   ),
   CardModel(
-    id: 4,
-    imageUrl: 'assets/images/majorarcana/strength.jpg',
-    title: "strength",
+    imageUrl: 'assets/images/thepentacles/kingofpentacles.jpg',
+    title: "kingofpentacles",
   ),
   CardModel(
-    id: 5,
-    imageUrl: 'assets/images/majorarcana/temperance.jpg',
-    title: "temperance",
+    imageUrl: 'assets/images/thepentacles/knightofpentacles.jpg',
+    title: "knightofpentacles",
   ),
   CardModel(
-    id: 6,
-    imageUrl: 'assets/images/majorarcana/thechariot.jpg',
-    title: "thechariot",
+    imageUrl: 'assets/images/thepentacles/nineofcoins.jpg',
+    title: "nineofcoins",
   ),
   CardModel(
-    id: 7,
-    imageUrl: 'assets/images/majorarcana/thedevil.jpg',
-    title: "thedevil",
+    imageUrl: 'assets/images/thepentacles/pageofpentacles.jpg',
+    title: "pageofpentacles",
   ),
   CardModel(
-    id: 8,
-    imageUrl: 'assets/images/majorarcana/theemperor.jpg',
-    title: "theemperor",
+    imageUrl: 'assets/images/thepentacles/queenofpentacles.jpg',
+    title: "queenofpentacles",
   ),
   CardModel(
-    id: 9,
-    imageUrl: 'assets/images/majorarcana/theempress.jpg',
-    title: "theempress",
+    imageUrl: 'assets/images/thepentacles/sevenofcoins.jpg',
+    title: "sevenofcoins",
   ),
   CardModel(
-    id: 10,
-    imageUrl: 'assets/images/majorarcana/thefool.jpg',
-    title: "thefool",
+    imageUrl: 'assets/images/thepentacles/sixofcoins.jpg',
+    title: "sixofcoins",
   ),
   CardModel(
-    id: 11,
-    imageUrl: 'assets/images/majorarcana/thehermit.jpg',
-    title: "thehermit",
+    imageUrl: 'assets/images/thepentacles/tenofcoins.jpg',
+    title: "tenofcoins",
   ),
   CardModel(
-    id: 12,
-    imageUrl: 'assets/images/majorarcana/thehierophant.jpg',
-    title: "thehierophant",
+    imageUrl: 'assets/images/thepentacles/threeofcoins.jpg',
+    title: "threenofcoins",
   ),
   CardModel(
-    id: 13,
-    imageUrl: 'assets/images/majorarcana/thehighpriest.jpg',
-    title: "thehighpriest",
-  ),
-  CardModel(
-    id: 14,
-    imageUrl: 'assets/images/majorarcana/thelovers.jpg',
-    title: "thelovers",
-  ),
-  CardModel(
-    id: 15,
-    imageUrl: 'assets/images/majorarcana/themagician.jpg',
-    title: "themagician",
-  ),
-  CardModel(
-    id: 16,
-    imageUrl: 'assets/images/majorarcana/themoon.jpg',
-    title: "themoon",
-  ),
-  CardModel(
-    id: 17,
-    imageUrl: 'assets/images/majorarcana/thestar.jpg',
-    title: "thestar",
-  ),
-  CardModel(
-    id: 18,
-    imageUrl: 'assets/images/majorarcana/thesun.jpg',
-    title: "thesun",
-  ),
-  CardModel(
-    id: 19,
-    imageUrl: 'assets/images/majorarcana/thetower.jpg',
-    title: "thetower",
-  ),
-  CardModel(
-    id: 20,
-    imageUrl: 'assets/images/majorarcana/theworld.jpg',
-    title: "theworld",
-  ),
-  CardModel(
-    id: 21,
-    imageUrl: 'assets/images/majorarcana/wheloffortune.jpg',
-    title: "wheloffortune",
+    imageUrl: 'assets/images/thepentacles/twoofcoins.jpg',
+    title: "twoofcoins",
   ),
 ];
 

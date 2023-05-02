@@ -1,7 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api, depend_on_referenced_packages, unrelated_type_equality_checks
 
 import 'package:card_flick/models/card__model.dart';
-import 'package:card_flick/views/pages/thewands.dart';
 import 'package:card_flick/widgets/customFlipCard.dart';
 import 'package:card_flick/widgets/float_Action_button.dart';
 import 'package:flutter/material.dart';
@@ -16,114 +15,60 @@ class Theswords extends StatefulWidget {
 
 List<CardModel> theswordsImagesList = [
   CardModel(
-    id: 0,
-    imageUrl: 'assets/images/majorarcana/death.jpg',
-    title: "death",
+    imageUrl: 'assets/images/theswords/aceofswords.jpg',
+    title: "aceofswords",
   ),
   CardModel(
-    id: 1,
-    imageUrl: 'assets/images/majorarcana/hangedman.jpg',
-    title: "hangedman",
+    imageUrl: 'assets/images/theswords/eightofswords.jpg',
+    title: "eightofswords",
   ),
   CardModel(
-    id: 2,
-    imageUrl: 'assets/images/majorarcana/judgement.jpg',
-    title: "judgement",
+    imageUrl: 'assets/images/theswords/fiveofswords.jpg',
+    title: "fiveofswords",
   ),
   CardModel(
-    id: 3,
-    imageUrl: 'assets/images/majorarcana/justice.jpg',
-    title: "justice",
+    imageUrl: 'assets/images/theswords/fourofwords.jpg',
+    title: "fourofwords",
   ),
   CardModel(
-    id: 4,
-    imageUrl: 'assets/images/majorarcana/strength.jpg',
-    title: "strength",
+    imageUrl: 'assets/images/theswords/kingofswords.jpg',
+    title: "kingofswords",
   ),
   CardModel(
-    id: 5,
-    imageUrl: 'assets/images/majorarcana/temperance.jpg',
-    title: "temperance",
+    imageUrl: 'assets/images/theswords/knightofswords.jpg',
+    title: "knightofswords",
   ),
   CardModel(
-    id: 6,
-    imageUrl: 'assets/images/majorarcana/thechariot.jpg',
-    title: "thechariot",
+    imageUrl: 'assets/images/theswords/nineofswords.jpg',
+    title: "nineofswords",
   ),
   CardModel(
-    id: 7,
-    imageUrl: 'assets/images/majorarcana/thedevil.jpg',
-    title: "thedevil",
+    imageUrl: 'assets/images/theswords/pageofswords.jpg',
+    title: "pageofswords",
   ),
   CardModel(
-    id: 8,
-    imageUrl: 'assets/images/majorarcana/theemperor.jpg',
-    title: "theemperor",
+    imageUrl: 'assets/images/theswords/queenofswords.jpg',
+    title: "queenofswords",
   ),
   CardModel(
-    id: 9,
-    imageUrl: 'assets/images/majorarcana/theempress.jpg',
-    title: "theempress",
+    imageUrl: 'assets/images/theswords/sevenofswords.jpg',
+    title: "sevenofswords",
   ),
   CardModel(
-    id: 10,
-    imageUrl: 'assets/images/majorarcana/thefool.jpg',
-    title: "thefool",
+    imageUrl: 'assets/images/theswords/sixofswords.jpg',
+    title: "sixofswords",
   ),
   CardModel(
-    id: 11,
-    imageUrl: 'assets/images/majorarcana/thehermit.jpg',
-    title: "thehermit",
+    imageUrl: 'assets/images/theswords/tenswords.jpg',
+    title: "tenswords",
   ),
   CardModel(
-    id: 12,
-    imageUrl: 'assets/images/majorarcana/thehierophant.jpg',
-    title: "thehierophant",
+    imageUrl: 'assets/images/theswords/threeofswords.jpg',
+    title: "threeofswords",
   ),
   CardModel(
-    id: 13,
-    imageUrl: 'assets/images/majorarcana/thehighpriest.jpg',
-    title: "thehighpriest",
-  ),
-  CardModel(
-    id: 14,
-    imageUrl: 'assets/images/majorarcana/thelovers.jpg',
-    title: "thelovers",
-  ),
-  CardModel(
-    id: 15,
-    imageUrl: 'assets/images/majorarcana/themagician.jpg',
-    title: "themagician",
-  ),
-  CardModel(
-    id: 16,
-    imageUrl: 'assets/images/majorarcana/themoon.jpg',
-    title: "themoon",
-  ),
-  CardModel(
-    id: 17,
-    imageUrl: 'assets/images/majorarcana/thestar.jpg',
-    title: "thestar",
-  ),
-  CardModel(
-    id: 18,
-    imageUrl: 'assets/images/majorarcana/thesun.jpg',
-    title: "thesun",
-  ),
-  CardModel(
-    id: 19,
-    imageUrl: 'assets/images/majorarcana/thetower.jpg',
-    title: "thetower",
-  ),
-  CardModel(
-    id: 20,
-    imageUrl: 'assets/images/majorarcana/theworld.jpg',
-    title: "theworld",
-  ),
-  CardModel(
-    id: 21,
-    imageUrl: 'assets/images/majorarcana/wheloffortune.jpg',
-    title: "wheloffortune",
+    imageUrl: 'assets/images/theswords/twoofswords.jpg',
+    title: "twoofswords",
   ),
 ];
 

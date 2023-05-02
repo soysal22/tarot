@@ -1,7 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api, depend_on_referenced_packages, unrelated_type_equality_checks
 
 import 'package:card_flick/models/card__model.dart';
-import 'package:card_flick/views/final_page.dart';
 import 'package:card_flick/widgets/customFlipCard.dart';
 import 'package:card_flick/widgets/float_Action_button.dart';
 import 'package:flutter/material.dart';
@@ -16,114 +15,60 @@ class Thewands extends StatefulWidget {
 
 List<CardModel> thewandsImagesList = [
   CardModel(
-    id: 0,
-    imageUrl: 'assets/images/majorarcana/death.jpg',
-    title: "death",
+    imageUrl: 'assets/images/thewands/aceofwands.jpg',
+    title: "aceofwands",
   ),
   CardModel(
-    id: 1,
-    imageUrl: 'assets/images/majorarcana/hangedman.jpg',
-    title: "hangedman",
+    imageUrl: 'assets/images/thewands/eightofwands.jpg',
+    title: "eightofwands",
   ),
   CardModel(
-    id: 2,
-    imageUrl: 'assets/images/majorarcana/judgement.jpg',
-    title: "judgement",
+    imageUrl: 'assets/images/thewands/fiveofwands.jpg',
+    title: "fiveofwands",
   ),
   CardModel(
-    id: 3,
-    imageUrl: 'assets/images/majorarcana/justice.jpg',
-    title: "justice",
+    imageUrl: 'assets/images/thewands/fourofwands.jpg',
+    title: "fourofwands",
   ),
   CardModel(
-    id: 4,
-    imageUrl: 'assets/images/majorarcana/strength.jpg',
-    title: "strength",
+    imageUrl: 'assets/images/thewands/kingofwands.jpg',
+    title: "kingofwands",
   ),
   CardModel(
-    id: 5,
-    imageUrl: 'assets/images/majorarcana/temperance.jpg',
-    title: "temperance",
+    imageUrl: 'assets/images/thewands/knightofwands.jpg',
+    title: "knightofwands",
   ),
   CardModel(
-    id: 6,
-    imageUrl: 'assets/images/majorarcana/thechariot.jpg',
-    title: "thechariot",
+    imageUrl: 'assets/images/thewands/nineofwands.jpg',
+    title: "nineofwands",
   ),
   CardModel(
-    id: 7,
-    imageUrl: 'assets/images/majorarcana/thedevil.jpg',
-    title: "thedevil",
+    imageUrl: 'assets/images/thewands/pageofwands.jpg',
+    title: "pageofwands",
   ),
   CardModel(
-    id: 8,
-    imageUrl: 'assets/images/majorarcana/theemperor.jpg',
-    title: "theemperor",
+    imageUrl: 'assets/images/thewands/queenofwands.jpg',
+    title: "queenofwands",
   ),
   CardModel(
-    id: 9,
-    imageUrl: 'assets/images/majorarcana/theempress.jpg',
-    title: "theempress",
+    imageUrl: 'assets/images/thewands/sevenofwands.jpg',
+    title: "sevenofwands",
   ),
   CardModel(
-    id: 10,
-    imageUrl: 'assets/images/majorarcana/thefool.jpg',
-    title: "thefool",
+    imageUrl: 'assets/images/thewands/sixofwands.jpg',
+    title: "sixofwands",
   ),
   CardModel(
-    id: 11,
-    imageUrl: 'assets/images/majorarcana/thehermit.jpg',
-    title: "thehermit",
+    imageUrl: 'assets/images/thewands/tenofwands.jpg',
+    title: "tenofwands",
   ),
   CardModel(
-    id: 12,
-    imageUrl: 'assets/images/majorarcana/thehierophant.jpg',
+    imageUrl: 'assets/images/thewands/threeofwands.jpg',
     title: "thehierophant",
   ),
   CardModel(
-    id: 13,
-    imageUrl: 'assets/images/majorarcana/thehighpriest.jpg',
-    title: "thehighpriest",
-  ),
-  CardModel(
-    id: 14,
-    imageUrl: 'assets/images/majorarcana/thelovers.jpg',
-    title: "thelovers",
-  ),
-  CardModel(
-    id: 15,
-    imageUrl: 'assets/images/majorarcana/themagician.jpg',
-    title: "themagician",
-  ),
-  CardModel(
-    id: 16,
-    imageUrl: 'assets/images/majorarcana/themoon.jpg',
-    title: "themoon",
-  ),
-  CardModel(
-    id: 17,
-    imageUrl: 'assets/images/majorarcana/thestar.jpg',
-    title: "thestar",
-  ),
-  CardModel(
-    id: 18,
-    imageUrl: 'assets/images/majorarcana/thesun.jpg',
-    title: "thesun",
-  ),
-  CardModel(
-    id: 19,
-    imageUrl: 'assets/images/majorarcana/thetower.jpg',
-    title: "thetower",
-  ),
-  CardModel(
-    id: 20,
-    imageUrl: 'assets/images/majorarcana/theworld.jpg',
-    title: "theworld",
-  ),
-  CardModel(
-    id: 21,
-    imageUrl: 'assets/images/majorarcana/wheloffortune.jpg',
-    title: "wheloffortune",
+    imageUrl: 'assets/images/thewands/twoofwands.jpg',
+    title: "twoofwands",
   ),
 ];
 

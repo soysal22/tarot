@@ -1,5 +1,8 @@
 // ignore_for_file: file_names, depend_on_referenced_packages
 
+import 'dart:developer';
+
+import 'package:card_flick/controller/card_controller.dart';
 import 'package:card_flick/models/card__model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -8,9 +11,10 @@ class CustomFlipCard extends StatelessWidget {
   final List<CardModel> comeToList;
   final String nextroute;
 
-  const CustomFlipCard(
+  CustomFlipCard(
       {super.key, required this.comeToList, required this.nextroute});
 
+  final CardController cardController = Get.find();
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -20,10 +24,14 @@ class CustomFlipCard extends StatelessWidget {
         itemCount: comeToList.length,
         itemBuilder: (BuildContext context, int index) {
           return GestureDetector(
-            onTap: () {
-              _customShowDialog(context);
-              Future.delayed(const Duration(seconds: 1))
-                  .then((value) => Get.toNamed(nextroute));
+            onTap: () async {
+              _customDialog(context);
+              Future.delayed(const Duration(seconds: 2)).then((value) {
+                log("Seçilen kartın içeriği :${comeToList[index].toJson()}");
+                // log(comeToList[index].toJson().toString());
+                cardController.listAdd(comeToList[index]);
+                Get.toNamed(nextroute);
+              });
             },
             child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -38,32 +46,43 @@ class CustomFlipCard extends StatelessWidget {
     );
   }
 
-  Future<dynamic> _customShowDialog(BuildContext context) {
-    return showDialog(
+  Future<dynamic> _customDialog(BuildContext context) {
+    return showGeneralDialog(
       barrierDismissible: false,
       barrierColor: const Color.fromARGB(41, 237, 239, 241),
       context: context,
-      builder: (context) {
-        return Stack(children: [
-          AlertDialog(
-            title: _title(),
-            content: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.only(top: 15, bottom: 15)),
-                onPressed: () => Get.toNamed(nextroute),
-                child: const Text(
-                  "Sonraki Sayfa ",
-                  style: TextStyle(fontSize: 18),
-                )),
+      barrierLabel: "",
+      pageBuilder: (context, animation, secondaryAnimation) {
+        return Container();
+      },
+      transitionDuration: const Duration(milliseconds: 300),
+      transitionBuilder: (context, a1, a2, child) {
+        return ScaleTransition(
+          scale: Tween(begin: 0.5, end: 1.0).animate(a1),
+          child: FadeTransition(
+            opacity: Tween(begin: 0.5, end: 1.0).animate(a1),
+            child: Stack(children: [
+              AlertDialog(
+                title: _title(),
+                content: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.only(top: 15, bottom: 15)),
+                    onPressed: () => Get.toNamed(nextroute),
+                    child: const Text(
+                      "Sonraki Sayfa ",
+                      style: TextStyle(fontSize: 18),
+                    )),
+              ),
+              _closeIcon(context),
+            ]),
           ),
-          _closeIcon(context),
-        ]);
+        );
       },
     );
   }
 
   Text _title() {
-    return const Text("Diğer Kartları seçmek için Tıklayınız ",
+    return const Text("Diğer Kartları seçmek için Tıklayınız Veya Bekleyiniz",
         textAlign: TextAlign.center);
   }
 
