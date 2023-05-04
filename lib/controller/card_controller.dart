@@ -16,7 +16,8 @@ class CardController extends GetxController {
   }
 
   Future<void> listAllDelete() async {
-    saveSelectedCard?.remove;
-    log("list All  Deleted");
+    saveSelectedCard?.clear();
+    log(" list All Deleted");
+    log(saveSelectedCard.toString());
   }
 }

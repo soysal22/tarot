@@ -2,6 +2,8 @@
 
 import 'package:card_flick/controller/card_controller.dart';
 import 'package:card_flick/routes/routes.dart';
+import 'package:card_flick/views/deneme/animas.dart';
+import 'package:card_flick/views/deneme/list_deneme.dart';
 import 'package:card_flick/views/deneme/screenshot.dart';
 import 'package:card_flick/views/final_page.dart';
 import 'package:card_flick/views/home_page_view.dart';
@@ -30,13 +32,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       getPages: Routes().getList,
-      title: 'Flutter Demo',
+      title: 'Flutter Tarot Demo ',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
 
-      initialRoute: "/majorarcana",
-      // home: const Majorarcana(),
+      //initialRoute: "/majorarcana",
+      home: Animas(),
     );
   }
 }

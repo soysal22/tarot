@@ -17,59 +17,59 @@ class _HomePageViewState extends State<HomePageView> {
   List<CardModel> cardImage = [
     CardModel(
       imageUrl: 'assets/images/majorarcana/aceofcups.jpg',
-      title: "aceofcups",
+      cardName: "aceofcups",
     ),
     CardModel(
       imageUrl: 'assets/images/majorarcana/eightofcups.jpg',
-      title: "eightofcups",
+      cardName: "eightofcups",
     ),
     CardModel(
       imageUrl: 'assets/images/majorarcana/fiveofcups.jpg',
-      title: "fiveofcups",
+      cardName: "fiveofcups",
     ),
     CardModel(
       imageUrl: 'assets/images/majorarcana/fourofcups.jpg',
-      title: "fourofcups",
+      cardName: "fourofcups",
     ),
     CardModel(
       imageUrl: 'assets/images/majorarcana/kingofcups.jpg',
-      title: "kingofcups",
+      cardName: "kingofcups",
     ),
     CardModel(
       imageUrl: 'assets/images/majorarcana/knightofcups.jpg',
-      title: "knightofcups",
+      cardName: "knightofcups",
     ),
     CardModel(
       imageUrl: 'assets/images/majorarcana/nineofcups.jpg',
-      title: "nineofcups",
+      cardName: "nineofcups",
     ),
     CardModel(
       imageUrl: 'assets/images/majorarcana/pageofcups.jpg',
-      title: "pageofcups",
+      cardName: "pageofcups",
     ),
     CardModel(
       imageUrl: 'assets/images/majorarcana/queenofcups.jpg',
-      title: "queenofcups",
+      cardName: "queenofcups",
     ),
     CardModel(
       imageUrl: 'assets/images/majorarcana/sevenofcups.jpg',
-      title: "sevenofcups",
+      cardName: "sevenofcups",
     ),
     CardModel(
       imageUrl: 'assets/images/majorarcana/sixofcups.jpg',
-      title: "sixofcups",
+      cardName: "sixofcups",
     ),
     CardModel(
       imageUrl: 'assets/images/majorarcana/tenofcups.jpg',
-      title: "tenofcups",
+      cardName: "tenofcups",
     ),
     CardModel(
       imageUrl: 'assets/images/majorarcana/threeofcups.jpg',
-      title: "thehierophant",
+      cardName: "thehierophant",
     ),
     CardModel(
       imageUrl: 'assets/images/majorarcana/twoofcups.jpg',
-      title: "twoofcups",
+      cardName: "twoofcups",
     ),
   ];
 
@@ -172,7 +172,7 @@ class _HomePageViewState extends State<HomePageView> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text(cardImage[index].title ?? "title",
+          title: Text(cardImage[index].cardName ?? "title",
               textAlign: TextAlign.center),
           content: CircleAvatar(
             child: Center(

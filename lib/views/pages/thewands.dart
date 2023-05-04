@@ -16,59 +16,59 @@ class Thewands extends StatefulWidget {
 List<CardModel> thewandsImagesList = [
   CardModel(
     imageUrl: 'assets/images/thewands/aceofwands.jpg',
-    title: "aceofwands",
+    cardName: "aceofwands",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/eightofwands.jpg',
-    title: "eightofwands",
+    cardName: "eightofwands",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/fiveofwands.jpg',
-    title: "fiveofwands",
+    cardName: "fiveofwands",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/fourofwands.jpg',
-    title: "fourofwands",
+    cardName: "fourofwands",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/kingofwands.jpg',
-    title: "kingofwands",
+    cardName: "kingofwands",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/knightofwands.jpg',
-    title: "knightofwands",
+    cardName: "knightofwands",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/nineofwands.jpg',
-    title: "nineofwands",
+    cardName: "nineofwands",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/pageofwands.jpg',
-    title: "pageofwands",
+    cardName: "pageofwands",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/queenofwands.jpg',
-    title: "queenofwands",
+    cardName: "queenofwands",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/sevenofwands.jpg',
-    title: "sevenofwands",
+    cardName: "sevenofwands",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/sixofwands.jpg',
-    title: "sixofwands",
+    cardName: "sixofwands",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/tenofwands.jpg',
-    title: "tenofwands",
+    cardName: "tenofwands",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/threeofwands.jpg',
-    title: "thehierophant",
+    cardName: "thehierophant",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/twoofwands.jpg',
-    title: "twoofwands",
+    cardName: "twoofwands",
   ),
 ];
 
@@ -87,7 +87,7 @@ class _ThewandsState extends State<Thewands> {
       backgroundColor: const Color.fromARGB(255, 159, 56, 1),
       body: CustomFlipCard(
         comeToList: thewandsImagesList,
-        nextroute: "/finalPage",
+        nextroute: "/chatFinal",
       ),
     );
   }

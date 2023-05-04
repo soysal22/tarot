@@ -18,35 +18,41 @@ class CustomFlipCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: GridView.builder(
-        gridDelegate:
-            const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-        itemCount: comeToList.length,
-        itemBuilder: (BuildContext context, int index) {
-          return GestureDetector(
-            onTap: () async {
-              _customDialog(context);
-              Future.delayed(const Duration(seconds: 2)).then((value) {
-                log("Seçilen kartın içeriği :${comeToList[index].toJson()}");
-                // log(comeToList[index].toJson().toString());
-                cardController.listAdd(comeToList[index]);
-                Get.toNamed(nextroute);
-              });
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Card(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)),
-                  child: _closeImage()),
-            ),
-          );
-        },
+      child: Scrollbar(
+        interactive: true,
+        trackVisibility: true,
+        thickness: 10,
+        radius: const Radius.circular(15),
+        child: GridView.builder(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2),
+          itemCount: comeToList.length,
+          itemBuilder: (BuildContext context, int index) {
+            return GestureDetector(
+              onTap: () async {
+                _customDialog(context, index);
+                // Future.delayed(const Duration(seconds: 1)).then((value) {
+                //   log("Seçilen kartın içeriği :${comeToList[index].toJson()}");
+                //   // log(comeToList[index].toJson().toString());
+                //   cardController.listAdd(comeToList[index]);
+                //   // Get.toNamed(nextroute);
+                // });
+              },
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Card(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)),
+                    child: _closeImage()),
+              ),
+            );
+          },
+        ),
       ),
     );
   }
 
-  Future<dynamic> _customDialog(BuildContext context) {
+  Future<dynamic> _customDialog(BuildContext context, int index) {
     return showGeneralDialog(
       barrierDismissible: false,
       barrierColor: const Color.fromARGB(41, 237, 239, 241),
@@ -67,7 +73,12 @@ class CustomFlipCard extends StatelessWidget {
                 content: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.only(top: 15, bottom: 15)),
-                    onPressed: () => Get.toNamed(nextroute),
+                    onPressed: () {
+                      Get.toNamed(nextroute);
+                      log("Seçilen kartın içeriği :${comeToList[index].toJson()}");
+                      // log(comeToList[index].toJson().toString());
+                      cardController.listAdd(comeToList[index]);
+                    },
                     child: const Text(
                       "Sonraki Sayfa ",
                       style: TextStyle(fontSize: 18),

@@ -16,59 +16,59 @@ class Thecups extends StatefulWidget {
 List<CardModel> thecupsImagesList = [
   CardModel(
     imageUrl: 'assets/images/thecups/aceofcups.jpg',
-    title: "aceofcups",
+    cardName: "aceofcups",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/eightofcups.jpg',
-    title: "eightofcups",
+    cardName: "eightofcups",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/fiveofcups.jpg',
-    title: "fiveofcups",
+    cardName: "fiveofcups",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/fourofcups.jpg',
-    title: "fourofcups",
+    cardName: "fourofcups",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/kingofcups.jpg',
-    title: "kingofcups",
+    cardName: "kingofcups",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/knightofcups.jpg',
-    title: "knightofcups",
+    cardName: "knightofcups",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/nineofcups.jpg',
-    title: "nineofcups",
+    cardName: "nineofcups",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/pageofcups.jpg',
-    title: "pageofcups",
+    cardName: "pageofcups",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/queenofcups.jpg',
-    title: "queenofcups",
+    cardName: "queenofcups",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/sevenofcups.jpg',
-    title: "sevenofcups",
+    cardName: "sevenofcups",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/sixofcups.jpg',
-    title: "sixofcups",
+    cardName: "sixofcups",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/tenofcups.jpg',
-    title: "tenofcups",
+    cardName: "tenofcups",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/threeofcups.jpg',
-    title: "thehierophant",
+    cardName: "thehierophant",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/twoofcups.jpg',
-    title: "twoofcups",
+    cardName: "twoofcups",
   ),
 ];
 

@@ -16,59 +16,59 @@ class Thepentacles extends StatefulWidget {
 List<CardModel> thepentaclesImagesList = [
   CardModel(
     imageUrl: 'assets/images/thepentacles/aceofcoins.jpg',
-    title: "aceofcoins",
+    cardName: "aceofcoins",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/eightofcoins.jpg',
-    title: "eightofcoins",
+    cardName: "eightofcoins",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/fiveofcoins.jpg',
-    title: "fiveofcoins",
+    cardName: "fiveofcoins",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/fourofcoins.jpg',
-    title: "fourofcoins",
+    cardName: "fourofcoins",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/kingofpentacles.jpg',
-    title: "kingofpentacles",
+    cardName: "kingofpentacles",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/knightofpentacles.jpg',
-    title: "knightofpentacles",
+    cardName: "knightofpentacles",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/nineofcoins.jpg',
-    title: "nineofcoins",
+    cardName: "nineofcoins",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/pageofpentacles.jpg',
-    title: "pageofpentacles",
+    cardName: "pageofpentacles",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/queenofpentacles.jpg',
-    title: "queenofpentacles",
+    cardName: "queenofpentacles",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/sevenofcoins.jpg',
-    title: "sevenofcoins",
+    cardName: "sevenofcoins",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/sixofcoins.jpg',
-    title: "sixofcoins",
+    cardName: "sixofcoins",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/tenofcoins.jpg',
-    title: "tenofcoins",
+    cardName: "tenofcoins",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/threeofcoins.jpg',
-    title: "threenofcoins",
+    cardName: "threenofcoins",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/twoofcoins.jpg',
-    title: "twoofcoins",
+    cardName: "twoofcoins",
   ),
 ];
 

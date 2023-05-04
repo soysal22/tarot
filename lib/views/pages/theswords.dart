@@ -16,59 +16,59 @@ class Theswords extends StatefulWidget {
 List<CardModel> theswordsImagesList = [
   CardModel(
     imageUrl: 'assets/images/theswords/aceofswords.jpg',
-    title: "aceofswords",
+    cardName: "aceofswords",
   ),
   CardModel(
     imageUrl: 'assets/images/theswords/eightofswords.jpg',
-    title: "eightofswords",
+    cardName: "eightofswords",
   ),
   CardModel(
     imageUrl: 'assets/images/theswords/fiveofswords.jpg',
-    title: "fiveofswords",
+    cardName: "fiveofswords",
   ),
   CardModel(
     imageUrl: 'assets/images/theswords/fourofwords.jpg',
-    title: "fourofwords",
+    cardName: "fourofwords",
   ),
   CardModel(
     imageUrl: 'assets/images/theswords/kingofswords.jpg',
-    title: "kingofswords",
+    cardName: "kingofswords",
   ),
   CardModel(
     imageUrl: 'assets/images/theswords/knightofswords.jpg',
-    title: "knightofswords",
+    cardName: "knightofswords",
   ),
   CardModel(
     imageUrl: 'assets/images/theswords/nineofswords.jpg',
-    title: "nineofswords",
+    cardName: "nineofswords",
   ),
   CardModel(
     imageUrl: 'assets/images/theswords/pageofswords.jpg',
-    title: "pageofswords",
+    cardName: "pageofswords",
   ),
   CardModel(
     imageUrl: 'assets/images/theswords/queenofswords.jpg',
-    title: "queenofswords",
+    cardName: "queenofswords",
   ),
   CardModel(
     imageUrl: 'assets/images/theswords/sevenofswords.jpg',
-    title: "sevenofswords",
+    cardName: "sevenofswords",
   ),
   CardModel(
     imageUrl: 'assets/images/theswords/sixofswords.jpg',
-    title: "sixofswords",
+    cardName: "sixofswords",
   ),
   CardModel(
     imageUrl: 'assets/images/theswords/tenswords.jpg',
-    title: "tenswords",
+    cardName: "tenswords",
   ),
   CardModel(
     imageUrl: 'assets/images/theswords/threeofswords.jpg',
-    title: "threeofswords",
+    cardName: "threeofswords",
   ),
   CardModel(
     imageUrl: 'assets/images/theswords/twoofswords.jpg',
-    title: "twoofswords",
+    cardName: "twoofswords",
   ),
 ];
 

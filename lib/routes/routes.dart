@@ -1,3 +1,4 @@
+import 'package:card_flick/views/final_chat.dart';
 import 'package:card_flick/views/final_page.dart';
 import 'package:card_flick/views/pages/majorarcana.dart';
 import 'package:card_flick/views/pages/thecups.dart';
@@ -14,5 +15,6 @@ class Routes {
     GetPage(name: "/theswords", page: () => const Theswords()),
     GetPage(name: "/thewands", page: () => const Thewands()),
     GetPage(name: "/finalPage", page: () => FinalPage()),
+    GetPage(name: "/chatFinal", page: () => const ChatFinal()),
   ];
 }

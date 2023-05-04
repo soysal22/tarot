@@ -37,7 +37,7 @@ class FinalPage extends StatelessWidget {
                       data?.imageUrl ?? "assets/images/back.png",
                       fit: BoxFit.cover,
                     ),
-                    trailing: Text(data?.title ?? "title"),
+                    trailing: Text(data?.cardName ?? "title"),
                   );
           },
         ));

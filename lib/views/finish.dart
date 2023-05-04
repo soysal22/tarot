@@ -14,91 +14,91 @@ class Finished extends StatefulWidget {
 List<CardModel> majorarcanaImagesList = [
   CardModel(
     imageUrl: 'assets/images/majorarcana/death.jpg',
-    title: "death",
+    cardName: "death",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/hangedman.jpg',
-    title: "hangedman",
+    cardName: "hangedman",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/judgement.jpg',
-    title: "judgement",
+    cardName: "judgement",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/justice.jpg',
-    title: "justice",
+    cardName: "justice",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/strength.jpg',
-    title: "strength",
+    cardName: "strength",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/temperance.jpg',
-    title: "temperance",
+    cardName: "temperance",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/thechariot.jpg',
-    title: "thechariot",
+    cardName: "thechariot",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/thedevil.jpg',
-    title: "thedevil",
+    cardName: "thedevil",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/theemperor.jpg',
-    title: "theemperor",
+    cardName: "theemperor",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/theempress.jpg',
-    title: "theempress",
+    cardName: "theempress",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/thefool.jpg',
-    title: "thefool",
+    cardName: "thefool",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/thehermit.jpg',
-    title: "thehermit",
+    cardName: "thehermit",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/thehierophant.jpg',
-    title: "thehierophant",
+    cardName: "thehierophant",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/thehighpriest.jpg',
-    title: "thehighpriest",
+    cardName: "thehighpriest",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/thelovers.jpg',
-    title: "thelovers",
+    cardName: "thelovers",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/themagician.jpg',
-    title: "themagician",
+    cardName: "themagician",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/themoon.jpg',
-    title: "themoon",
+    cardName: "themoon",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/thestar.jpg',
-    title: "thestar",
+    cardName: "thestar",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/thesun.jpg',
-    title: "thesun",
+    cardName: "thesun",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/thetower.jpg',
-    title: "thetower",
+    cardName: "thetower",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/theworld.jpg',
-    title: "theworld",
+    cardName: "theworld",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/wheloffortune.jpg',
-    title: "wheloffortune",
+    cardName: "wheloffortune",
   ),
 ];
 
@@ -151,7 +151,7 @@ class _FinishedState extends State<Finished> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text(majorarcanaImagesList[index].title ?? "title",
+          title: Text(majorarcanaImagesList[index].cardName ?? "title",
               textAlign: TextAlign.center),
           content: CircleAvatar(
             child: Center(
