@@ -16,59 +16,73 @@ class Thecups extends StatefulWidget {
 List<CardModel> thecupsImagesList = [
   CardModel(
     imageUrl: 'assets/images/thecups/aceofcups.jpg',
-    cardName: "aceofcups",
+    cardName: "Ace Of Cups",
+    title: "Yeni bir duygusal başlangıç.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/eightofcups.jpg',
-    cardName: "eightofcups",
+    cardName: "Eight Of Cups",
+    title: "Yeni bir yola çıkma kararı almak",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/fiveofcups.jpg',
-    cardName: "fiveofcups",
+    cardName: "Five Of Cups",
+    title: "Kayıp veya üzüntü.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/fourofcups.jpg',
-    cardName: "fourofcups",
+    cardName: "Four Of Cups",
+    title: " Duygusal tatminsizlik veya hayal kırıklığı",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/kingofcups.jpg',
-    cardName: "kingofcups",
+    cardName: "King Of Cups",
+    title: "Duygusal zeka, empati ve anlayış.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/knightofcups.jpg',
-    cardName: "knightofcups",
+    cardName: "Knight Of Cups",
+    title: "Duygusal romantizm ve hayallerin peşinde koşmak.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/nineofcups.jpg',
-    cardName: "nineofcups",
+    cardName: "Nine of Cups",
+    title: "Duygusal tatmin veya mutluluk.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/pageofcups.jpg',
-    cardName: "pageofcups",
+    cardName: "Page of Cups",
+    title: "Yaratıcılık ve duygusal keşifler.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/queenofcups.jpg',
-    cardName: "queenofcups",
+    cardName: "Queen of Cupsv",
+    title: "Duygusal zeka, empati ve anlayış.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/sevenofcups.jpg',
-    cardName: "sevenofcups",
+    cardName: "Seven of Cups",
+    title: "Hayallerin gerçekleştirilmesi için seçeneklerin araştırılması.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/sixofcups.jpg',
-    cardName: "sixofcups",
+    cardName: "Six of Cups",
+    title: "Nostalji veya geçmişe dönüş.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/tenofcups.jpg',
     cardName: "tenofcups",
+    title: "",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/threeofcups.jpg',
-    cardName: "thehierophant",
+    cardName: "Three of Cups",
+    title: "Kutlama ve mutluluk",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/twoofcups.jpg',
-    cardName: "twoofcups",
+    cardName: "Two of Cups",
+    title: "İlişkilerde uyum ve denge.",
   ),
 ];
 

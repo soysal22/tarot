@@ -15,60 +15,72 @@ class Thewands extends StatefulWidget {
 
 List<CardModel> thewandsImagesList = [
   CardModel(
-    imageUrl: 'assets/images/thewands/aceofwands.jpg',
-    cardName: "aceofwands",
-  ),
+      imageUrl: 'assets/images/thewands/aceofwands.jpg',
+      cardName: "Ace Of Wands",
+      title: "Yeni başlangıçlar ve yaratıcılık"),
   CardModel(
-    imageUrl: 'assets/images/thewands/eightofwands.jpg',
-    cardName: "eightofwands",
-  ),
+      imageUrl: 'assets/images/thewands/eightofwands.jpg',
+      cardName: "Eight Of Wands",
+      title: "Hızlı ilerleme süreci ve fırsatların değerlendirilmesi."),
   CardModel(
     imageUrl: 'assets/images/thewands/fiveofwands.jpg',
-    cardName: "fiveofwands",
+    cardName: "Five Of Wands",
+    title: "Rekabet ve mücadele süreci.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/fourofwands.jpg',
-    cardName: "fourofwands",
+    cardName: "Four Of Wands",
+    title: " Kutlama ve mutluluk süreci.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/kingofwands.jpg',
-    cardName: "kingofwands",
+    cardName: "King Of Wands",
+    title: "Güçlü bir liderlik hissi ve hedeflerine ulaşma sürecinde olmak.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/knightofwands.jpg',
-    cardName: "knightofwands",
+    cardName: "Knight Of Wands",
+    title: "Hareketlilik ve enerji dolu bir süreçte olmak.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/nineofwands.jpg',
-    cardName: "nineofwands",
+    cardName: "Nine Of Wands",
+    title: "Dayanıklılık ve mücadele süreci.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/pageofwands.jpg',
-    cardName: "pageofwands",
+    cardName: "Page Of Wands",
+    title: "Yaratıcılık ve keşfetme süreci.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/queenofwands.jpg',
-    cardName: "queenofwands",
+    cardName: "Queen Of Wands",
+    title: "Güçlü bir liderlik hissi ve yaratıcılık sürecinde olmak.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/sevenofwands.jpg',
-    cardName: "sevenofwands",
+    cardName: "Seven Of Wands",
+    title: "Kendini savunma süreci ve mücadele etme hissi.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/sixofwands.jpg',
-    cardName: "sixofwands",
+    cardName: "Six Of Wands",
+    title: "Başarıya ulaşma süreci ve ödüllendirilme hissi.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/tenofwands.jpg',
-    cardName: "tenofwands",
+    cardName: "Ten Of Wands",
+    title: "Sorumlulukların üstesinden gelme süreci ve yük taşıma hissi.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/threeofwands.jpg',
-    cardName: "thehierophant",
+    cardName: "Three Of Wands",
+    title: "Başarıya giden yolda ilerleme ve büyüme süreci.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/twoofwands.jpg',
-    cardName: "twoofwands",
+    cardName: "Two Of Wands",
+    title: "Geleceğe yönelik planlama ve karar verme süreci.",
   ),
 ];
 
