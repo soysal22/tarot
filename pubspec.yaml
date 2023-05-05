@@ -29,7 +29,12 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   flame_audio: ^2.0.2
-  screenshot:  
+  chat_gpt_sdk:
+    git:
+      url: https://github.com/iampawan/Flutter-ChatGPT.git
+  flutter_dotenv: ^5.0.2
+  velocity_x: ^3.6.0    
+   
   get:
   flutter:
     sdk: flutter

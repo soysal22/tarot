@@ -1,20 +1,33 @@
-// ignore_for_file: file_names, depend_on_referenced_packages
+// ignore_for_file: file_names, depend_on_referenced_packages, deprecated_member_use
 
 import 'dart:developer';
-
 import 'package:card_flick/controller/card_controller.dart';
 import 'package:card_flick/models/card__model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class CustomFlipCard extends StatelessWidget {
+class CustomFlipCard extends StatefulWidget {
   final List<CardModel> comeToList;
   final String nextroute;
 
-  CustomFlipCard(
+  const CustomFlipCard(
       {super.key, required this.comeToList, required this.nextroute});
 
+  @override
+  State<CustomFlipCard> createState() => _CustomFlipCardState();
+}
+
+class _CustomFlipCardState extends State<CustomFlipCard> {
   final CardController cardController = Get.find();
+
+  late ScrollController scrollController = ScrollController();
+
+  @override
+  void dispose() {
+    scrollController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -23,10 +36,12 @@ class CustomFlipCard extends StatelessWidget {
         trackVisibility: true,
         thickness: 10,
         radius: const Radius.circular(15),
+        controller: scrollController,
         child: GridView.builder(
+          controller: scrollController,
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2),
-          itemCount: comeToList.length,
+          itemCount: widget.comeToList.length,
           itemBuilder: (BuildContext context, int index) {
             return GestureDetector(
               onTap: () async {
@@ -74,10 +89,10 @@ class CustomFlipCard extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.only(top: 15, bottom: 15)),
                     onPressed: () {
-                      Get.toNamed(nextroute);
-                      log("Seçilen kartın içeriği :${comeToList[index].toJson()}");
+                      Get.toNamed(widget.nextroute);
+                      log("Seçilen kartın içeriği :${widget.comeToList[index].toJson()}");
                       // log(comeToList[index].toJson().toString());
-                      cardController.listAdd(comeToList[index]);
+                      cardController.listAdd(widget.comeToList[index]);
                     },
                     child: const Text(
                       "Sonraki Sayfa ",
@@ -93,7 +108,7 @@ class CustomFlipCard extends StatelessWidget {
   }
 
   Text _title() {
-    return const Text("Diğer Kartları seçmek için Tıklayınız Veya Bekleyiniz",
+    return const Text("Diğer Kartları seçmek için Tıklayınız",
         textAlign: TextAlign.center);
   }
 

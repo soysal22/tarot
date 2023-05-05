@@ -5,7 +5,6 @@ import 'package:card_flick/widgets/customFlipCard.dart';
 import 'package:card_flick/widgets/float_Action_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:screenshot/screenshot.dart';
 
 class Majorarcana extends StatefulWidget {
   const Majorarcana({Key? key}) : super(key: key);
@@ -134,17 +133,9 @@ class _MajorarcanaState extends State<Majorarcana> {
     super.initState();
   }
 
-  ScreenshotController screenshotController = ScreenshotController();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   leading: Screenshot(
-      //     controller: screenshotController,
-      //     child: const Icon(Icons.camera_alt_outlined),
-      //   ),
-      // ),
       floatingActionButton: CustomFloatActionButton(
         routePage: () => Get.toNamed("/majorarcana"),
       ),
