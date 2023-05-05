@@ -1,4 +1,5 @@
-// ignore_for_file: prefer_is_empty
+// ignore_for_file: prefer_is_empty, avoid_print, must_be_immutable
+import 'dart:developer';
 
 import 'package:card_flick/controller/card_controller.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +9,8 @@ class FinalPage extends StatelessWidget {
   FinalPage({super.key});
 
   final CardController cardController = Get.find();
-
+  List? list;
+  String? tit;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,22 +26,36 @@ class FinalPage extends StatelessWidget {
               Get.offAndToNamed("/majorarcana");
             },
             child: const Text("Yeni Kart Seçmek İçin Tıklayınız ")),
-        body: ListView.builder(
-          padding: const EdgeInsets.all(15),
-          itemCount: cardController.saveSelectedCard?.length,
-          itemBuilder: (context, index) {
-            var data = cardController.saveSelectedCard?[index];
-            return cardController.saveSelectedCard?.length == 0 ||
-                    cardController.saveSelectedCard?.length == null
-                ? const Text("data is empty ")
-                : ListTile(
-                    title: Image.asset(
-                      data?.imageUrl ?? "assets/images/back.png",
-                      fit: BoxFit.cover,
-                    ),
-                    trailing: Text(data?.cardName ?? "title"),
-                  );
-          },
+        body: Column(
+          children: [
+            Expanded(
+              child: ListView.builder(
+                padding: const EdgeInsets.all(15),
+                itemCount: cardController.saveSelectedCard?.length,
+                itemBuilder: (context, index) {
+                  print(cardController.saveSelectedCard.toString());
+
+                  var data = cardController.saveSelectedCard?[index];
+
+                  list?.add(data?.title);
+                  log(list.toString());
+                  return cardController.saveSelectedCard?.length == 0 ||
+                          cardController.saveSelectedCard?.length == null
+                      ? const Text("data is empty ")
+                      : ListTile(
+                          leading: Image.asset(
+                            data?.imageUrl ?? "assets/images/back.png",
+                            fit: BoxFit.cover,
+                          ),
+                          title: Text("Kartın Adı : ${data?.cardName}"),
+                          subtitle: Text("Kartın Anlamı : ${data?.title}"),
+                        );
+                },
+              ),
+            ),
+            const SizedBox(height: 25),
+            Expanded(child: Text(list.toString())),
+          ],
         ));
   }
 

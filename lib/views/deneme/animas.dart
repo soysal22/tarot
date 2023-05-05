@@ -1,6 +1,10 @@
+// ignore_for_file: library_private_types_in_public_api, unused_field, use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
 
 class Animas extends StatefulWidget {
+  const Animas({super.key});
+
   @override
   _AnimasState createState() => _AnimasState();
 }
@@ -30,7 +34,7 @@ class _AnimasState extends State<Animas> with SingleTickerProviderStateMixin {
                 itemCount: items.length,
                 itemBuilder: (context, index) {
                   return AnimatedContainer(
-                    duration: Duration(seconds: 5),
+                    duration: const Duration(seconds: 5),
                     curve: Curves.easeIn,
                     child: Card(
                       child: ListTile(

@@ -37,8 +37,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
 
-      //initialRoute: "/majorarcana",
-      home: Animas(),
+      initialRoute: "/majorarcana",
+      //home: Animas(),
     );
   }
 }

@@ -15,60 +15,74 @@ class Thepentacles extends StatefulWidget {
 
 List<CardModel> thepentaclesImagesList = [
   CardModel(
-    imageUrl: 'assets/images/thepentacles/aceofcoins.jpg',
-    cardName: "aceofcoins",
+    imageUrl: 'assets/images/thepentacles/aceofpentacles.jpg',
+    cardName: "Ace Of Pentacles",
+    title: "Yeni bir finansal fırsat, para veya zenginlik.",
   ),
   CardModel(
-    imageUrl: 'assets/images/thepentacles/eightofcoins.jpg',
-    cardName: "eightofcoins",
+    imageUrl: 'assets/images/thepentacles/eightofpentacles.jpg',
+    cardName: "Eight Of Pentacles",
+    title: "Uzmanlık, çalışkanlık, disiplin veya el becerileri.",
   ),
   CardModel(
-    imageUrl: 'assets/images/thepentacles/fiveofcoins.jpg',
-    cardName: "fiveofcoins",
+    imageUrl: 'assets/images/thepentacles/fiveofpentacles.jpg',
+    cardName: "five Of Pentacles",
+    title: "Maddi kayıp, zorluklar, sıkıntı veya yoksulluk.",
   ),
   CardModel(
-    imageUrl: 'assets/images/thepentacles/fourofcoins.jpg',
-    cardName: "fourofcoins",
+    imageUrl: 'assets/images/thepentacles/fourofpentacles.jpg',
+    cardName: "Four Of Pentacles",
+    title: "Kontrol, bağlılık, aşırı koruma veya maddi güvensizlik.",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/kingofpentacles.jpg',
-    cardName: "kingofpentacles",
+    cardName: "King Of Pentacles",
+    title: "Refah, güvenilirlik, liderlik veya bir erkek lider.",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/knightofpentacles.jpg',
-    cardName: "knightofpentacles",
+    cardName: "Knight Of Pentacles",
+    title: "Güvenilirlik, sorumluluk, sabır veya bir seyahatçi.",
   ),
   CardModel(
-    imageUrl: 'assets/images/thepentacles/nineofcoins.jpg',
-    cardName: "nineofcoins",
+    imageUrl: 'assets/images/thepentacles/nineofpentacles.jpg',
+    cardName: "Nine of Pentacles",
+    title: "Lüks, rahatlık, maddi güvenlik veya bağımsızlık.",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/pageofpentacles.jpg',
-    cardName: "pageofpentacles",
+    cardName: "Page of Pentacles",
+    title: "Dürüstlük, çalışkanlık, yeni bir fikir veya genç bir adam.",
   ),
   CardModel(
     imageUrl: 'assets/images/thepentacles/queenofpentacles.jpg',
-    cardName: "queenofpentacles",
+    cardName: "Queen of Pentacles",
+    title: "Cömertlik, pratiklik, güvenilirlik veya bir kadın lider.",
   ),
   CardModel(
-    imageUrl: 'assets/images/thepentacles/sevenofcoins.jpg',
-    cardName: "sevenofcoins",
+    imageUrl: 'assets/images/thepentacles/sevenofpentacles.jpg',
+    cardName: "Seven Of Pentacles",
+    title: "Sabır, emek, yatırımın meyvelerinin toplanması veya bekleyiş.",
   ),
   CardModel(
-    imageUrl: 'assets/images/thepentacles/sixofcoins.jpg',
-    cardName: "sixofcoins",
+    imageUrl: 'assets/images/thepentacles/sixofpentacles.jpg',
+    cardName: "Six Of Pentacles",
+    title: "Cömertlik, paylaşım, karşılıklı yardım veya adil olma.",
   ),
   CardModel(
-    imageUrl: 'assets/images/thepentacles/tenofcoins.jpg',
-    cardName: "tenofcoins",
+    imageUrl: 'assets/images/thepentacles/tenofpentacles.jpg',
+    cardName: "Ten Of Pentacles",
+    title: "Zenginlik, refah, miras veya aile bağları.",
   ),
   CardModel(
-    imageUrl: 'assets/images/thepentacles/threeofcoins.jpg',
-    cardName: "threenofcoins",
+    imageUrl: 'assets/images/thepentacles/threeofpentacles.jpg',
+    cardName: "Three Of Pentacles",
+    title: "İşbirliği, ekip çalışması, becerilerin övgüsü veya başarı.",
   ),
   CardModel(
-    imageUrl: 'assets/images/thepentacles/twoofcoins.jpg',
-    cardName: "twoofcoins",
+    imageUrl: 'assets/images/thepentacles/twoofpentacles.jpg',
+    cardName: "Two Of Pentacles",
+    title: "Dengede kalmaya çalışmak, esneklik veya uyum.",
   ),
 ];
 

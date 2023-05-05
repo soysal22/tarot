@@ -13,11 +13,17 @@ class Thewands extends StatefulWidget {
   _ThewandsState createState() => _ThewandsState();
 }
 
+//Asalar (Wands), hayalleri, yaratıcılığı, tutkuyu ve motivasyonu
+//simgeleyen bir tarot kartı kategorisidir. ,
+//Bu kartlar, genellikle bir kişinin yaşamındaki fikirler,
+//projeler ve yaratıcılıkla ilgili konulara işaret ederler.
+
 List<CardModel> thewandsImagesList = [
   CardModel(
       imageUrl: 'assets/images/thewands/aceofwands.jpg',
       cardName: "Ace Of Wands",
-      title: "Yeni başlangıçlar ve yaratıcılık"),
+      title:
+          "Yeni bir fikir, yaratıcılık, potansiyel ve heyecan verici bir başlangıç."),
   CardModel(
       imageUrl: 'assets/images/thewands/eightofwands.jpg',
       cardName: "Eight Of Wands",
@@ -25,62 +31,64 @@ List<CardModel> thewandsImagesList = [
   CardModel(
     imageUrl: 'assets/images/thewands/fiveofwands.jpg',
     cardName: "Five Of Wands",
-    title: "Rekabet ve mücadele süreci.",
+    title: "Rekabet, zorluklar, engeller veya çatışma.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/fourofwands.jpg',
     cardName: "Four Of Wands",
-    title: " Kutlama ve mutluluk süreci.",
+    title: "Kutlama, başarı, mutluluk veya toplumsal onay.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/kingofwands.jpg',
     cardName: "King Of Wands",
-    title: "Güçlü bir liderlik hissi ve hedeflerine ulaşma sürecinde olmak.",
+    title: "Güçlü liderlik, vizyon, yaratıcılık veya bir erkek lider.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/knightofwands.jpg',
     cardName: "Knight Of Wands",
-    title: "Hareketlilik ve enerji dolu bir süreçte olmak.",
+    title: "Hareket, tutku, cesaret veya bir gezgin.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/nineofwands.jpg',
     cardName: "Nine Of Wands",
-    title: "Dayanıklılık ve mücadele süreci.",
+    title: "Direnç, dayanıklılık, mücadele veya savunma.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/pageofwands.jpg',
     cardName: "Page Of Wands",
-    title: "Yaratıcılık ve keşfetme süreci.",
+    title: "Yaratıcılık, genç bir adam, haber veya fikirlerin ilhamı.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/queenofwands.jpg',
     cardName: "Queen Of Wands",
-    title: "Güçlü bir liderlik hissi ve yaratıcılık sürecinde olmak.",
+    title: "Güçlü liderlik, tutku, enerji veya bir kadın lider.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/sevenofwands.jpg',
     cardName: "Seven Of Wands",
-    title: "Kendini savunma süreci ve mücadele etme hissi.",
+    title:
+        "Kendini savunma, zorluklara meydan okuma veya rekabetçi bir ruh hali.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/sixofwands.jpg',
     cardName: "Six Of Wands",
-    title: "Başarıya ulaşma süreci ve ödüllendirilme hissi.",
+    title: "Zafer, ödül, başarı veya tanınma.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/tenofwands.jpg',
     cardName: "Ten Of Wands",
-    title: "Sorumlulukların üstesinden gelme süreci ve yük taşıma hissi.",
+    title: "Ağır yük, stres, baskı veya sorumluluklar.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/threeofwands.jpg',
     cardName: "Three Of Wands",
-    title: "Başarıya giden yolda ilerleme ve büyüme süreci.",
+    title: "İlerleme, büyüme, başarı veya seyahat.",
   ),
   CardModel(
     imageUrl: 'assets/images/thewands/twoofwands.jpg',
     cardName: "Two Of Wands",
-    title: "Geleceğe yönelik planlama ve karar verme süreci.",
+    title:
+        "Geleceğe yönelik planlama, vizyon, uzun vadeli hedefler veya karar verme.",
   ),
 ];
 
@@ -99,7 +107,7 @@ class _ThewandsState extends State<Thewands> {
       backgroundColor: const Color.fromARGB(255, 159, 56, 1),
       body: CustomFlipCard(
         comeToList: thewandsImagesList,
-        nextroute: "/chatFinal",
+        nextroute: "/finalPage",
       ),
     );
   }

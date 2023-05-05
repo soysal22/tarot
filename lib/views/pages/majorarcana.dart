@@ -18,7 +18,7 @@ List<CardModel> majorarcanaImagesList = [
   CardModel(
     imageUrl: 'assets/images/majorarcana/theworld.jpg',
     cardName: "The World - Dünya",
-    title: "",
+    title: "Tamamlanma, bütünlük, evrensel anlayış.",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/death.jpg',
@@ -28,37 +28,38 @@ List<CardModel> majorarcanaImagesList = [
   CardModel(
     imageUrl: 'assets/images/majorarcana/hangedman.jpg',
     cardName: "Hangedman - Asıl Adam",
-    title: "Sabır, farkındalık, yeniden doğuş",
+    title: "Kurban, kabul, sükunet.",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/judgement.jpg',
     cardName: "Judgement - Yargı",
-    title: "Yenilenme ve yeniden doğuş",
+    title: "Yeniden doğuş, keşif, kurtuluş.",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/justice.jpg',
     cardName: "Justice - Adalet ",
-    title: "Denge, dürüstlük, yargı",
+    title: "Denge, dürüstlük, hak , adalet",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/strength.jpg',
     cardName: "Strength - Güç ",
-    title: "Cesaret, dayanıklılık, tutku",
+    title: "Cesaret, dayanıklılık, güç",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/temperance.jpg',
     cardName: "Temperance - ölçülülük",
-    title: "Dengeli olmak, uyumlu olmak",
+    title: "Dengeli yaşam, ılımlılık, uyum.",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/thechariot.jpg',
     cardName: "The Chariot - Araba ",
-    title: "Başarı, irade gücü, kontrol",
+    title: "Başarı, irade gücü, irade",
   ),
   CardModel(
-      imageUrl: 'assets/images/majorarcana/thedevil.jpg',
-      cardName: "The Devil - Şeytan ",
-      title: "Bağımlılık, korku, kötülük"),
+    imageUrl: 'assets/images/majorarcana/thedevil.jpg',
+    cardName: "The Devil - Şeytan ",
+    title: "Aşkınlaşma, kötülük, arzular.",
+  ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/theemperor.jpg',
     cardName: "The Emperor - İmparator ",
@@ -72,12 +73,12 @@ List<CardModel> majorarcanaImagesList = [
   CardModel(
     imageUrl: 'assets/images/majorarcana/thefool.jpg',
     cardName: "The Fool - Çılgın",
-    title: " Yeni başlangıçlar, özgürlük, macera",
+    title: "Yeni başlangıçlar, özgürlük, macera",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/thehermit.jpg',
     cardName: "The Hermit - Seyyid",
-    title: "İzolasyon, arayış, aydınlanma",
+    title: "Yalnızlık, arayış, öğretmen.",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/thehierophant.jpg',
@@ -92,17 +93,17 @@ List<CardModel> majorarcanaImagesList = [
   CardModel(
     imageUrl: 'assets/images/majorarcana/thelovers.jpg',
     cardName: "The Lovers - Aşıklar ",
-    title: "Aşk, uyum, seçim",
+    title: "Aşk, uyum, sevgi, bağlılık",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/themagician.jpg',
     cardName: "The Magician - Sihirbaz",
-    title: "Yaratıcılık, beceri, güç.",
+    title: "Yaratıcılık, beceri, güç , dönüşüm.",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/themoon.jpg',
     cardName: "The Moon - Ay",
-    title: "Hayal gücüne sahip olmak.",
+    title: "İhtiras, hayal gücü, bilinçaltı",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/thestar.jpg',
@@ -112,12 +113,12 @@ List<CardModel> majorarcanaImagesList = [
   CardModel(
     imageUrl: 'assets/images/majorarcana/thesun.jpg',
     cardName: "The Sun - Güneş ",
-    title: " Mutluluk ve başarıya giden yolun açılması.",
+    title: "Mutluluk, başarı, aydınlanma.",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/thetower.jpg',
     cardName: "The Tower - Kule ",
-    title: "Yıkım, değişimlerin zorluğu.",
+    title: "Yıkım, felaket , değişimlerin zorluğu.",
   ),
   CardModel(
     imageUrl: 'assets/images/majorarcana/wheloffortune.jpg',

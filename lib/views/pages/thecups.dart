@@ -13,6 +13,9 @@ class Thecups extends StatefulWidget {
   _ThecupsState createState() => _ThecupsState();
 }
 
+//Büyüleyici Kupa (Cups), genellikle duygusal konuları ve
+//ilişkileri temsil eden bir Tarot kategorisidir.
+
 List<CardModel> thecupsImagesList = [
   CardModel(
     imageUrl: 'assets/images/thecups/aceofcups.jpg',
@@ -22,32 +25,32 @@ List<CardModel> thecupsImagesList = [
   CardModel(
     imageUrl: 'assets/images/thecups/eightofcups.jpg',
     cardName: "Eight Of Cups",
-    title: "Yeni bir yola çıkma kararı almak",
+    title: "Ayrılık, arayış, hayal kırıklığı.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/fiveofcups.jpg',
     cardName: "Five Of Cups",
-    title: "Kayıp veya üzüntü.",
+    title: "Kayıp, üzüntü, pişmanlık.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/fourofcups.jpg',
     cardName: "Four Of Cups",
-    title: " Duygusal tatminsizlik veya hayal kırıklığı",
+    title: "Duygusal tatminsizlik veya hayal kırıklığı",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/kingofcups.jpg',
     cardName: "King Of Cups",
-    title: "Duygusal zeka, empati ve anlayış.",
+    title: "Duygusal dengeli olmak, dürüstlük, cesaret.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/knightofcups.jpg',
     cardName: "Knight Of Cups",
-    title: "Duygusal romantizm ve hayallerin peşinde koşmak.",
+    title: "Tutku, romantizm, hayalperestlik.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/nineofcups.jpg',
     cardName: "Nine of Cups",
-    title: "Duygusal tatmin veya mutluluk.",
+    title: "Mutluluk, tatmin, başarı.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/pageofcups.jpg',
@@ -62,7 +65,7 @@ List<CardModel> thecupsImagesList = [
   CardModel(
     imageUrl: 'assets/images/thecups/sevenofcups.jpg',
     cardName: "Seven of Cups",
-    title: "Hayallerin gerçekleştirilmesi için seçeneklerin araştırılması.",
+    title: "Hayal gücü, seçenekler, kararsızlık.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/sixofcups.jpg',
@@ -72,12 +75,12 @@ List<CardModel> thecupsImagesList = [
   CardModel(
     imageUrl: 'assets/images/thecups/tenofcups.jpg',
     cardName: "tenofcups",
-    title: "",
+    title: "Aşk, huzur, aile.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/threeofcups.jpg',
     cardName: "Three of Cups",
-    title: "Kutlama ve mutluluk",
+    title: "Sevinç, kutlama, arkadaşlık.",
   ),
   CardModel(
     imageUrl: 'assets/images/thecups/twoofcups.jpg',
