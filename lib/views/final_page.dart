@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_is_empty, avoid_print, must_be_immutable
+// ignore_for_file: prefer_is_empty, avoid_print, must_be_immutable, prefer_typing_uninitialized_variables
 import 'dart:developer';
 
 import 'package:card_flick/controller/card_controller.dart';
@@ -13,7 +13,7 @@ class FinalPage extends StatelessWidget {
 
   late ScrollController scrollController = ScrollController();
   List? listem = [];
-
+  var data;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,11 +31,48 @@ class FinalPage extends StatelessWidget {
             child: Column(
               children: [
                 Expanded(
+                  flex: 9,
+                  child: ListView.separated(
+                    controller: scrollController,
+                    itemCount:
+                        int.parse("${cardController.saveSelectedCard?.length}"),
+                    itemBuilder: (context, index) {
+                      //log("Listem  : ${cardController.saveSelectedCard}");
+                      var data = cardController.saveSelectedCard?[index];
+
+                      listem?.add(data?.title ?? "listeye veri  gelmiyor");
+                      //  log("Listem  : $listem");
+                      return cardController.saveSelectedCard?.length == 0 ||
+                              cardController.saveSelectedCard?.length == null
+                          ? const Text("data is empty ")
+                          : _cardImage(data, context);
+                    },
+                    separatorBuilder: (context, index) =>
+                        const SizedBox(height: 15),
+                  ),
+                ),
+
+                // print("Listem  : $listem"),
+
+                Expanded(
+                  flex: 0.8.toInt(),
+                  child: Container(
+                    color: const Color.fromARGB(255, 216, 16, 67),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ));
+  }
+
+/*   Expanded(
+                  flex: 9,
                   child: ListView.builder(
                     controller: scrollController,
                     itemCount: cardController.saveSelectedCard?.length,
                     itemBuilder: (context, index) {
-                      print(cardController.saveSelectedCard.toString());
+                      // print(cardController.saveSelectedCard.toString());
 
                       var data = cardController.saveSelectedCard?[index];
 
@@ -48,24 +85,11 @@ class FinalPage extends StatelessWidget {
                     },
                   ),
                 ),
-                SizedBox.expand(
-                  child: SizedBox(
-                    height: 20,
-                  ),
-                ),
-                Text(listem.toString(),
-                    softWrap: true,
-                    overflow: TextOverflow.visible,
-                    maxLines: null,
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          fontSize: 16,
-                        )),
-              ],
-            ),
-          ),
-        ));
-  }
-
+                Expanded(
+                    flex: 1,
+                    child: Container(
+                      color: const Color.fromARGB(255, 216, 16, 67),
+                    )) */
   ElevatedButton _floatACtionButton() {
     return ElevatedButton(
         style: ElevatedButton.styleFrom(),
@@ -97,6 +121,7 @@ class FinalPage extends StatelessWidget {
               fit: BoxFit.fill,
             ),
           ),
+          const SizedBox(width: 10),
           Expanded(
             child: _cardTexts(data, context),
           ),
@@ -124,12 +149,12 @@ class FinalPage extends StatelessWidget {
               text: "Kartın Anlamı : ",
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     fontWeight: FontWeight.bold,
-                    fontSize: 18,
+                    fontSize: 16,
                   )),
           TextSpan(
               text: data?.title,
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    fontSize: 16,
+                    fontSize: 14,
                   )),
         ])),
       ],

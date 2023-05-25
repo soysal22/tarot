@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
       ),
 
       initialRoute: "/majorarcana",
-      //home: Animas(),
+      //home: DenemeColor(),
     );
   }
 }

@@ -36,13 +36,15 @@ class _CustomFloatActionButtonState extends State<CustomFloatActionButton> {
             style: ElevatedButton.styleFrom(
               padding: const EdgeInsets.all(15),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)),
+                  borderRadius: BorderRadius.circular(20)),
             ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
+            child: Wrap(
+              // alignment: WrapAlignment.spaceBetween,
+              // mainAxisSize: MainAxisSize.min,
+              spacing: 10,
               children: const [
                 Text("Kartları Karıştır", style: TextStyle(fontSize: 18)),
-                SizedBox(width: 10),
+                //  SizedBox(width: 10),
                 Icon(Icons.swap_vert, size: 30),
               ],
             ),

@@ -76,7 +76,7 @@ class _CustomFlipCardState extends State<CustomFlipCard> {
       pageBuilder: (context, animation, secondaryAnimation) {
         return Container();
       },
-      transitionDuration: const Duration(milliseconds: 300),
+      transitionDuration: const Duration(milliseconds: 400),
       transitionBuilder: (context, a1, a2, child) {
         return ScaleTransition(
           scale: Tween(begin: 0.5, end: 1.0).animate(a1),
@@ -88,11 +88,14 @@ class _CustomFlipCardState extends State<CustomFlipCard> {
                 content: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.only(top: 15, bottom: 15)),
-                    onPressed: () {
+                    onPressed: () async {
+                      const CircularProgressIndicator();
+                      Future.delayed(const Duration(seconds: 3));
                       Get.toNamed(widget.nextroute);
+
                       log("Seçilen kartın içeriği :${widget.comeToList[index].toJson()}");
-                      // log(comeToList[index].toJson().toString());
-                      cardController.listAdd(widget.comeToList[index]);
+
+                      await cardController.listAdd(widget.comeToList[index]);
                     },
                     child: const Text(
                       "Sonraki Sayfa ",
@@ -114,7 +117,7 @@ class _CustomFlipCardState extends State<CustomFlipCard> {
 
   Positioned _closeIcon(BuildContext context) {
     return Positioned(
-      bottom: MediaQuery.of(context).size.height / 1.75,
+      bottom: MediaQuery.of(context).size.height / 1.7,
       right: MediaQuery.of(context).size.width / 5,
       child: CircleAvatar(
         backgroundColor: Colors.red,
